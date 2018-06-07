@@ -1,0 +1,214 @@
+
+
+ body, *, .panel-title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size:11pt;
+}
+body .rtl, h1, h2, h3, h4, h5, h6, span, .btn, li, html, * ,a{
+    font-family: 'Noto Kufi Arabic', sans-serif !important;
+}
+#header.stricky-fixed {
+    background: #fff;
+}
+.header-img {
+    background: url(../img/resources/banner.PNG) no-repeat;
+    background-position: center;
+    height: 400px;
+}
+#header .logo {
+    float: right;
+}
+#effective {
+    background: url(../img/resources/bb.jpg);
+}
+#effective .effective-overlay {
+    padding: 300px 0 100px;
+}
+.nav-footer ul.nav li {
+    float: right;
+}
+#header.stricky-fixed .logo {
+    float: right;
+}
+.mainmenu-navigation .navigation> .nav-footer ul > li:hover > a {
+  color: #000;
+}
+.header-heding {
+    padding: 50px 0 0;
+}
+.nav-footer ul.nav li a {
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 17px;
+    color: #fff;
+    line-height: 29px;
+    border-right: none;
+    font-weight: normal !important;
+    text-transform: uppercase;
+    /* padding: 0 22px; */
+}
+.nav-footer {
+    margin-left: -90px;
+}
+.header-heding h1 {
+    text-align: right;
+    padding-left: 100px;
+    padding-right: 0;
+}
+.header-heding p {
+    text-align: right;
+    padding-left: 49%;
+    padding-right: 0;
+}
+#about .featured .fea-icon {
+    float: right;
+    margin-left: 25px;
+}
+#about .heading {
+    float: right;
+    border-right: 2px solid #fff;
+    border-left:none;
+}
+#about .heading p {
+    padding: 0 20px 0 0;
+    text-align: right;
+}
+#about .heading h1 {
+        text-align: right;
+        padding: 0 20px 0 0;
+}
+#about .text p {
+    text-align: right;
+}
+#about .featured .featured-text h3 {
+    text-align: right;
+}
+p {
+    text-align: right;
+}
+#member-benifit .heading h1 {
+    text-align: right;
+}
+#member-benifit .widget {
+    float: right;
+    padding-right: 0;
+    margin-right:0;
+    margin-left: -25px;
+    padding-top: 30px;
+}
+
+#member-benifit .quick-links li a:before {
+    margin-left: 12px;
+    float: right;
+    content: '\f104';
+}
+li {
+    text-align: right;
+}
+#effective .section-title-style h1 {
+    text-align: right;
+}
+#effective .section-title-style p {
+    text-align: right;
+}
+#member-benifit .member-img img {
+    height: 770px;
+}
+#testimonial .testimonial-bx .client-img {
+    float: right;
+}
+#testimonial .testimonial-bx .testimonial-text-bx {
+    border-right: 7px solid #aeaeae;
+    border-left:none;
+}
+.single-pricing-box .feature-list ul li {
+    text-align: center;
+}
+.header-heding h1,.header-heding span {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 36px;
+}
+
+.header-heding p {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-style:normal;
+    padding-left:10%;
+}
+a, a:hover, a:active, a:focus {
+    direction: rtl;
+}
+.Questions h4 {
+    color:red;
+}
+.Questions p {
+    direction:rtl;
+}
+p , li{
+    direction:rtl;
+}
+.service-bx {
+    height: 565px;
+}
+input {
+    padding-right:10px;
+}
+#testimonial .testimonial-bx .testimonial-text-bx p {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-style: normal;
+    font-size:12px;
+}
+#header {
+    background: #0000;
+}
+.nav-footer ul.nav li a {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: #000;
+}
+p {
+    letter-spacing: 0;
+}
+.section-title-style {
+    width: 100%;
+}
+#pricing-content .section-title-style p {
+    font-size: 18px;
+}
+.single-pricing-box .price-box {
+    background: #eb4d4d;
+}
+.single-pricing-box .price-box span.amount {
+    font-size: 30px;
+}
+.section-title-style p {
+    font-size: 17px;
+        color: #eb4d4d;
+}
+.contact-submit-button {
+    background: #eb4d4d;
+}
+#about .overlay-2 {
+    background-color: #484848;
+    color: white;
+}
+@media only screen and (max-width: 604px) {
+    .mainmenu-navigation .navigation .nav-header button {
+        float: left;
+    }
+    .header-heding h1, .header-heding span {
+        font-size:22px;
+    }
+    .contact-submit-button {
+        margin-right:18% !important;
+    }
+}
+@media only screen and (max-width: 795px) {
+    .mainmenu-navigation .navigation .nav-header button {
+        float: left;
+    }
+    .header-heding h1, .header-heding span {
+        font-size:22px;
+    }
+   #bb .contact-submit-button {
+        margin-right:24% !important;
+    }
+}
