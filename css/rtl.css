@@ -212,6 +212,6 @@ p {
         font-size:22px;
     }
    #bb .contact-submit-button {
-        margin-right:24% !important;
+            margin-right: 0% !important;
     }
 }
