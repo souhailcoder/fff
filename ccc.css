@@ -1,0 +1,23 @@
+
+<style>
+.con h1 {
+  color: #757575;
+}
+.content p, li {
+    color: #807d7d;
+    font-size: 30px;
+    line-height: 35px;
+}
+h2 {
+  color: #f15321;
+}
+h1 {
+    color: #e24949;
+}
+.contentall {
+    border: 10px solid #eee;
+    padding: 12px;
+    width: 700px;
+    margin: 0 auto;
+}
+</style>
