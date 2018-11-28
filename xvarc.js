@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-   if($("#blogID").attr("blogID")!="1836241687858598183" ) 
+   if($("#blogID").attr("blogID")!="7601418572176364349" ) 
  {
    window.location.href="https://www.almosamm.com/";
  }
