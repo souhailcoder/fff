@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+<form action="https://docs.google.com/forms/d/1OTqAxuIYAnG4kwlQBjP7gEntC6r1h9qmwgmZxltuBQg/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="i.desc.1082749682" name="entry.765859627" required="required" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="i.desc.1656004670" name="entry.1383782274" required="required" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="i.desc.1967678722" name="entry.602006981" required="required" >
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="i.desc.1274913744" name="entry.1901493096" placeholder="Write something.." style="height:200px"></textarea>
+
+<input name="draftResponse" type="hidden" value="[null,null,"-3526567338614092768"]" />
+                    <input name="pageHistory" type="hidden" value="0" />
+                    <input name="fbzx" type="hidden" value="-3526567338614092768" />
+          <button class="btn btn-default" name="submit" type="submit">إرسال</button>
+          
+  </form>
+</div>
+
+</body>
+</html>
