@@ -36,6 +36,35 @@ input[type=submit]:hover {
   padding: 20px;
 }
 </style>
+  
+  <script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>
 </head>
 <body>
 
@@ -50,8 +79,11 @@ input[type=submit]:hover {
     <label for="lname">Last Name</label>
     <input type="text" id="i.desc.1656004670" name="entry.1383782274" required="required" placeholder="Your last name..">
 
+      <label for="lname">Last Name</label>
+    <input type="text" id="i.desc.1719095154" name="entry.907621044" required="required" placeholder="Your last name..">
+
     <label for="country">Country</label>
-    <select id="i.desc.1967678722" name="entry.602006981" required="required" >
+    <select jsshadow="" jsname="W85ice" aria-describedby="i.desc.1967678722 i.err.1967678722" aria-labelledby="i10" required="required" >
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
@@ -66,6 +98,24 @@ input[type=submit]:hover {
           <button class="btn btn-default" name="submit" type="submit">إرسال</button>
           
   </form>
+</div>
+  
+  
+  
+  <div id="fade">
+<div class="thanks_layout">
+<div class="thanks_message">
+<img alt="Thumb" height="48" src="http://1.bp.blogspot.com/-ifYrQPpVoEY/XA-yhUcimSI/AAAAAAAACXc/CuZaH78INYAkAIm08ZTbHkEpUCDHoFXxwCK4BGAYYCw/s1600/thumbs-up%2B%25281%2529.png" width="48" />
+        
+
+<h2>
+تم ارسال الرسالة بنجاح</h2>
+<div>
+سيتم الرد عليك خلال ال 12 ساعه القادمة</div>
+<div class="close">
+<a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">×</a></div>
+</div>
+</div>
 </div>
 
 </body>
