@@ -2,6 +2,7 @@ $(document).ready(function()
 {
    if($("#blogID").attr("blogID")!="9099524317285695061" )
    if($("#blogID").attr("blogID")!="1333461989947017161" )
+   if($("#blogID").attr("blogID")!="957318809070511842" )
  {
    window.location.href="https://www.almosamm.com/";
  }
