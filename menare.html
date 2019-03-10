@@ -1,3 +1,5 @@
+
+
 <style>
 /* The container */
 .container {
@@ -276,23 +278,23 @@ function myFunction() {
 <div class="styled-in">
 <h1>الصف الدراسي</h1>
 <label class="container">طلاب ثالث ثانوي
-  <input type="checkbox" checked="checked">
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
   <span class="checkmark"></span>
 </label>
 <label class="container"> طلاب ثاني ثانوي
-  <input type="checkbox">
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
   <span class="checkmark"></span>
 </label>
 <label class="container">طلاب اول ثانوي
-  <input type="checkbox">
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
   <span class="checkmark"></span>
 </label>
   <label class="container">طلاب النخبة ( ابناء الشهداء والايتام )
-  <input type="checkbox">
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
   <span class="checkmark"></span>
 </label>
 <label class="container">جميع افراد المجتمع
-  <input type="checkbox">
+  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
   <span class="checkmark"></span>
 </label>
 </div>
@@ -305,3 +307,25 @@ function myFunction() {
         
 </div>
 </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ 
+  <script language='javascript' type='text/javascript'>//<![CDATA[
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+//]]></script>
+  
