@@ -23,7 +23,12 @@
   height: 0;
   width: 0;
 }
-
+.cheark {
+    float: left;    font-family: Ta3alamFont;
+    font-size: 13px;
+    line-height: 25px;
+    color: #7f7373;
+}
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
@@ -177,6 +182,11 @@ font-family: Ta3alamFont;
     width: 100%;
     min-height: 15em;
 }
+h1 {
+    font-family: Ta3alamFont;
+    font-size: 22px;
+    width: max-content;
+    margin-bottom: 20px;}
 #ss-form .btn {
     font-family: Ta3alamFont;
     font-size: 14px;
@@ -277,25 +287,25 @@ function myFunction() {
 </div>
 <div class="styled-in">
 <h1>الصف الدراسي</h1>
-<label class="container">طلاب ثالث ثانوي
+<label class="container"> ثالث ثانوي
   <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
-  <span class="checkmark"></span>
+  <span class="checkmark"></span><span class="cheark"> (طلاب ثالث ثانوي) فقط</span>
 </label>
-<label class="container"> طلاب ثاني ثانوي
+<label class="container">  ثاني ثانوي
   <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
-  <span class="checkmark"></span>
+  <span class="checkmark"></span><span class="cheark">(طلاب ثاني ثانوي) فقط  </span>
 </label>
-<label class="container">طلاب اول ثانوي
+<label class="container"> اول ثانوي
   <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
-  <span class="checkmark"></span>
+  <span class="checkmark"></span><span class="cheark">(طلاب اول ثانوي) فقط  </span>
 </label>
-  <label class="container">طلاب النخبة ( ابناء الشهداء والايتام )
+  <label class="container">ابناء الايتام والشهداء
   <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
-  <span class="checkmark"></span>
+  <span class="checkmark"></span><span class="cheark"> ( طلاب النخبة) (أبناء الشهداء والايتام) فقط  </span>
 </label>
 <label class="container">جميع افراد المجتمع
   <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
-  <span class="checkmark"></span>
+  <span class="checkmark"></span><span class="cheark">(جميع افراد المجتمع) فقط  </span>
 </label>
 </div>
           <button class="btn btn-default" name="submit" type="submit">إرسال</button>
