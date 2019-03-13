@@ -1,0 +1,69 @@
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='//www.just-images.com/media/k2/items/cache/clappr.min.js' type='text/javascript'></script>
+<script src='https://rawgit.com/asfarmed/blogger/master/clappr.min.js' type='text/javascript'></script>
+<style id='page-skin-1' type='text/css'><!--
+}
+
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>
+//<![CDATA[
+	document.write("<script> var random = Math.floor(Math.random() * $(&#39;.item&#39;).length); $(&#39;.item&#39;).hide().eq(random).show();<\/script>"):
+//]]>
+
+
+ </script>
+
+<body class='index'>
+<style>
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+
+.player-container {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  object-fit: contain;
+}
+</style>
+<div class='player-container' id='player'></div>
+<script>
+//<![CDATA[
+var player = new Clappr.Player({
+  // Pin-hole style camera - add ?hi or ?lo to explicitly pick a stream
+  //source: 'https://jcu.io/hls/22409771-b422-b681-4fa1-3ea80b70ca1b.m3u8',
+
+  // Tank camera - add ?hi or ?lo to explicitly pick a stream
+  source: 'https://d11n34tff6gog3.cloudfront.net/hls/chelstvpcweb/prog_index.m3u8',
+  maxBufferLength: 30,
+  autoPlay: true,
+  parentId: '#player',
+  width: '100%',
+  height: '100%',
+  mute: true,
+  hideVolumeBar: true,
+  autoPlayVisible: 'partial',
+  watermark: 'https://cdn.jcu.edu.au/1.0.0-beta.1/images/jcua-logo-mono-reversed.svg',
+  position: 'bottom-right',
+  watermarkLink: 'https://www.jcu.edu.au/'
+})
+
+
+//]]>
+
+
+ </script>
