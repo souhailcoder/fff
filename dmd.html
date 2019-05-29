@@ -1,0 +1,285 @@
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+<style amp-custom="amp-custom">
+/*<![CDATA[*/
+/*-------------------- font --------------------*/
+@font-face {
+font-family: "Ta3alamFont";
+font-weight: normal;
+font-style: normal;
+src: url(https://dl.dropboxusercontent.com/s/l0mqm6g2vwflxp2/Ta3alamFont.eot);
+src: url(https://dl.dropboxusercontent.com/s/l0mqm6g2vwflxp2/Ta3alamFont.eot?#iefix) format('embedded-opentype'),
+url(https://dl.dropboxusercontent.com/s/gjkkuvnfze5ii1l/Ta3alamFont.woff) format('woff'),
+url(https://dl.dropboxusercontent.com/s/mjj8mvkq7jgihhn/Ta3alamFont.ttf) format('truetype');
+}
+ .styled-in {
+    float: right;
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+body{margin:0;padding:0}
+#ss-form input:focus ~ label,
+#ss-form textarea:focus ~ label,
+#ss-form input:valid ~ label,
+#ss-form textarea:valid ~ label {
+    font-size: 10px;
+    color: #4d90fe;
+    top: -10px;
+    -webkit-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+#ss-form .styled-input {
+    width: 96%;
+    margin: 5px 0px;
+    padding: 0;
+    position: relative;
+    float: right;
+    margin-left: 20px;
+}
+#ss-form .styled-input-in {
+  position: relative;
+}
+#ss-form .styled-input label {
+color: #999;
+    padding: 1rem;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    line-height: 1;
+    font-family: Ta3alamFont;
+  font-size: 13px;
+}
+#ss-form .styled-input.wide {
+  width: 96%;
+}
+#ss-form input,
+#ss-form textarea {
+    border-radius: 2px;
+    padding: 12px 15px;
+    border: 1px solid #cad3df;
+    width: 100%;
+    font-size: 1rem;
+    background: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+font-family: Ta3alamFont;
+}
+#ss-form input ~ .span1,
+#ss-form textarea ~ .span1 {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #4d90fe;
+  position: absolute;
+  left: 49%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#ss-form input ~ .span2,
+#ss-form textarea ~ .span2 {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #4d90fe;
+  position: absolute;
+  right: 49%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#ss-form input ~ span {
+  bottom: 0;
+}
+#ss-form input:focus,
+#ss-form textarea:focus {
+  outline: 0;
+}
+#ss-form input:focus ~ .span1,
+#ss-form textarea:focus ~ .span1,
+#ss-form input:focus ~ .span2,
+#ss-form textarea:focus ~ .span2 {
+  width: 50%;
+}
+#ss-form textarea {
+    width: 100%;
+    min-height: 15em;
+}
+#ss-form .btn {
+    font-family: Ta3alamFont;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    padding: 0 25px;
+    height: 52px;
+    line-height: 50px;
+    color: #FFF;
+    background-color: #543c8a;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 10px 0 0;
+    background-image: none;
+    float: right;
+    width: 207px;
+}
+#ss-form .btn-default:hover,
+#ss-form .btn-default:focus {
+  background-color: #4d90fe;
+  color: white;
+  outline: 0;
+}
+#fade {
+    opacity: 0;
+  display: none;
+}
+.thanks_layout{text-align: center; position: fixed; top:0; left:0; bottom:0; right:0; background:rgba(255,255,255,.8);z-index:99999}
+.thanks_message{font-family: Ta3alamFont;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #DEDEDE;text-align: center; color:#333; position: absolute; top: 10%; left: 50%;margin-left:-25%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.thanks_message .close a{position:absolute; top:-15px; right: -15px; width:20px; height:20px; line-height:20px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:100%;color:#333;font-family: Ta3alamFont;font-size:18px;text-decoration:none}
+@media screen and (max-width:768px){.thanks_message{width:90%!important;margin-left:-45%!important;}
+}
+@media screen and (max-width:414px){#ss-form .styled-input {
+  width: 100%;
+}
+}
+</style>
+
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>
+
+
+<form action="https://formspree.io/khouajasouhail@gmail.com" id="ss-form" method="POST">
+<div class="styled-input">
+<div class="styled-input-in">
+<input aria-label="الاسم" name="name" dir="auto" required="required" title="" type="text" value="" />
+                                <label> : (*)  الاسم </label>
+                                <span class="span1"></span><span class="span2"></span>
+            </div>
+</div>
+    <div class="styled-input">
+<div class="styled-input-in">
+<input aria-label="رقم الجوال" name="phone" dir="auto" title="" type="email" value=""  required="required"/>
+                                <label>: (*)  البريد الالكتروني</label>
+                                <span class="span1"></span><span class="span2"></span>
+            </div>
+</div>
+<div class="styled-in">
+<h1>اريد التالي</h1>
+<label class="container">الباقة العادية
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">الباقة 2
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">الباقة 3
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div>
+          <button class="btn btn-default" name="submit" type="submit"> إرسال</button>
+          </form>
+<div id="fade">
+<div class="thanks_layout">
+<div class="thanks_message">
+<img alt="Thumb" height="48" src="http://1.bp.blogspot.com/-ifYrQPpVoEY/XA-yhUcimSI/AAAAAAAACXc/CuZaH78INYAkAIm08ZTbHkEpUCDHoFXxwCK4BGAYYCw/s1600/thumbs-up%2B%25281%2529.png" width="48" />
+        
+</div>
+</div>
