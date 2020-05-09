@@ -1,0 +1,70 @@
+
+<style>
+input[type=email],input[type=mobile],input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}input[type=submit]{background-color:#4caf50;color:#fff;padding:12px 20px;border:none;border-radius:4px;cursor:pointer}input[type=submit]:hover{background-color:#45a049}.almusammform{border-radius:5px;padding:20px}#fade{opacity:0;display:none}.thanks_layout{text-align:center;position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(255,255,255,.8);z-index:99999}.thanks_message{font-family:Ta3alamFont;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #dedede;text-align:center;color:#333;position:absolute;top:10%;left:50%;margin-left:-25%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.thanks_message .close a{position:absolute;top:-15px;right:-15px;width:20px;height:20px;line-height:20px;text-align:center;background:#fff;border:1px solid #ccc;border-radius:100%;color:#333;font-family:Ta3alamFont;font-size:18px;text-decoration:none}
+</style>
+
+<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
+
+<div class="almusammform">
+<h3></h3>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSdYJ4sT4ChxiLYgcACQScNsLYypxV4h7Xwmvjt3I3s4fdPiCg/formResponse" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+
+<label for="fname">الاسم:</label>
+    <input type="text" id="i.desc.437310841" name="entry.803193824" required="required" placeholder="ادخل اسمك بشكل صحيح">
+
+<label for="fname">البلد:</label>
+    <input type="text" id="i.desc.1467629568" name="entry.1304659222" required="required" placeholder="ادخل بلدك"> 
+
+<label for="femail">البريد الإلكتروني:</label>
+    <input type="email" id="i.desc.400349632" name="entry.347896320" required="required" placeholder="ادخل بريد إلكتروني صالح">
+
+    <label for="subject">الرسالة:</label>
+    <textarea id="i.desc.1845066371 " name="entry.1771050767" placeholder="تفاصيل الخدمة" style="height:200px"></textarea>
+    <input type="submit" value="ارسال الطلب">
+  </form>
+  
+ <div id="fade">
+<div class="thanks_layout">
+<div class="thanks_message">
+<img alt="Thumb" height="48" src="http://1.bp.blogspot.com/-ifYrQPpVoEY/XA-yhUcimSI/AAAAAAAACXc/CuZaH78INYAkAIm08ZTbHkEpUCDHoFXxwCK4BGAYYCw/s1600/thumbs-up%2B%25281%2529.png" width="48" />
+        
+<h2>
+تم ارسال الرسالة بنجاح</h2>
+<div>
+سيتم الرد عليك خلال ال 12 ساعه القادمة</div>
+<div class="close">
+<a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">×</a></div>
+</div>
+</div>
+</div>
+ 
+</div>
+
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>
