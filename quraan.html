@@ -1,8 +1,24 @@
       <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@400;700' rel='stylesheet'/>
 
 <style>
-body {font-family:cairo}
-input[type=email],input[type=mobile],input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #ccc;font-family:cairo;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}input[type=submit]{background-color:#4caf50;color:#fff;padding:12px 20px;border:none;border-radius:4px;cursor:pointer}input[type=submit]:hover{background-color:#45a049}.almusammform{border-radius:5px;padding:20px}#fade{opacity:0;display:none}.thanks_layout{text-align:center;position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(255,255,255,.8);z-index:99999}.thanks_message{font-family:cairo;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #dedede;text-align:center;color:#333;position:absolute;top:10%;left:50%;margin-left:-25%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.thanks_message .close a{position:absolute;top:-15px;right:-15px;width:20px;height:20px;line-height:20px;text-align:center;background:#fff;border:1px solid #ccc;border-radius:100%;color:#333;font-family:cairo;font-size:18px;text-decoration:none}
+body {font-family:cairo;direction:rtl}
+input[type=email],input[type=mobile],input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #ccc;font-family:cairo;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}input[type=submit]{background-color:#4caf50;color:#fff;padding:12px 20px;font-family:cairo;border:none;border-radius:4px;cursor:pointer}input[type=submit]:hover{background-color:#45a049}.almusammform{border-radius:5px;padding:20px}#fade{opacity:0;display:none}.thanks_layout{text-align:center;position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(255,255,255,.8);z-index:99999}.thanks_message{font-family:cairo;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #dedede;text-align:center;color:#333;position:absolute;top:10%;left:50%;margin-left:-25%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.thanks_message .close a{position:absolute;top:-15px;right:-15px;width:20px;height:20px;line-height:20px;text-align:center;background:#fff;border:1px solid #ccc;border-radius:100%;color:#333;font-family:cairo;font-size:18px;text-decoration:none}
+.allalmusamm {width: 50%;
+    float: right;
+    display: inline-table;
+    overflow: hidden;margin-left: 20px;}
+    .allalmusamm2 {width: 47%;
+    float: right;
+    display: inline-table;
+    overflow: hidden;}
+.alalmusamm {
+    width: 100%;
+    display: table;
+}
+@media screen and (max-width: 600px) {
+.allalmusamm {width: 100%;}
+    .allalmusamm2 {width: 100%;}
+    }
 </style>
 
 <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
@@ -11,18 +27,22 @@ input[type=email],input[type=mobile],input[type=text],select,textarea{width:100%
 <h3></h3>
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdYJ4sT4ChxiLYgcACQScNsLYypxV4h7Xwmvjt3I3s4fdPiCg/formResponse" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
 
+<div class="allalmusamm">
 <label for="fname">الاسم:</label>
     <input type="text" id="i.desc.437310841" name="entry.803193824" required="required" placeholder="ادخل اسمك بشكل صحيح">
-
+</div>
+<div class="allalmusamm2">
 <label for="fname">البلد:</label>
     <input type="text" id="i.desc.1467629568" name="entry.1304659222" required="required" placeholder="ادخل بلدك"> 
-
+</div>
+<div class="alalmusamm">
 <label for="femail">البريد الإلكتروني:</label>
     <input type="email" id="i.desc.400349632" name="entry.347896320" required="required" placeholder="ادخل بريد إلكتروني صالح">
 
     <label for="subject">الرسالة:</label>
-    <textarea id="i.desc.1845066371 " name="entry.1771050767" placeholder="تفاصيل الخدمة" style="height:200px"></textarea>
-    <input type="submit" value="ارسال الطلب">
+    <textarea id="i.desc.1845066371 " name="entry.1771050767" placeholder="التفاصيل " style="height:80px"></textarea>
+    </div>
+    <input type="submit" value="ارسال ">
   </form>
   
  <div id="fade">
@@ -33,7 +53,7 @@ input[type=email],input[type=mobile],input[type=text],select,textarea{width:100%
 <h2>
 تم ارسال الرسالة بنجاح</h2>
 <div>
-سيتم الرد عليك خلال ال 12 ساعه القادمة</div>
+سيتم الرد عليك في أقرب وقت ممكن.. شكرا</div>
 <div class="close">
 <a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">×</a></div>
 </div>
