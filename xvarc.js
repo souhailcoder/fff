@@ -12,7 +12,7 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="8909874192993789112" )
 
  {
-   window.location.href="https://www.almosamm.com/";
+   window.location.href="https://www.almusamm.com/";
  }
     });
     
@@ -22,13 +22,13 @@ $(document).ready(function()
 $(document)['ready'](function() {
     setInterval(function() {
         if (!$('#mycontent:visible')['length']) {
-            window['location']['href'] = 'https://www.almosamm.com/'
+            window['location']['href'] = 'https://www.almusamm.com/'
         }
     }, 3000)
 });
 window['onload'] = function() {
     var _0x6d7ax1 = document['getElementById']('mycontent');
-    _0x6d7ax1['setAttribute']('href', 'https://www.almosamm.com/');
+    _0x6d7ax1['setAttribute']('href', 'https://www.almusamm.com/');
     _0x6d7ax1['setAttribute']('rel', 'nofollow');
     _0x6d7ax1['setAttribute']('title', 'مصمم القالب');
     _0x6d7ax1['setAttribute']('style', 'display: inline-block!important; font-size: inherit!important; color: #fff!important; visibility: visible!important;z-index:99!important; opacity: 1!important;');
