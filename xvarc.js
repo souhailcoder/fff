@@ -9,6 +9,8 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="6687807101696198057" )
    if($("#blogID").attr("blogID")!="1487909532287548425" )
    if($("#blogID").attr("blogID")!="6393174373032363752" )
+   if($("#blogID").attr("blogID")!="8909874192993789112" )
+
  {
    window.location.href="https://www.almosamm.com/";
  }
