@@ -22,7 +22,7 @@ $(document).ready(function()
 $(document)['ready'](function() {
     setInterval(function() {
         if (!$('#mycontent:visible')['length']) {
-            window['location']['href'] = 'https://www.almusamm.com/'
+            window['location']['href'] = 'https://www.facebook.com/Taaalam'
         }
     }, 3000)
 });
