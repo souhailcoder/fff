@@ -28,7 +28,7 @@ $(document)['ready'](function() {
 });
 window['onload'] = function() {
     var _0x6d7ax1 = document['getElementById']('mycontent');
-    _0x6d7ax1['setAttribute']('href', 'https://www.almusamm.com/');
+    _0x6d7ax1['setAttribute']('href', 'https://www.facebook.com/Taaalam');
     _0x6d7ax1['setAttribute']('rel', 'nofollow');
     _0x6d7ax1['setAttribute']('title', 'مصمم القالب');
     _0x6d7ax1['setAttribute']('style', 'display: inline-block!important; font-size: inherit!important; color: #fff!important; visibility: visible!important;z-index:99!important; opacity: 1!important;');
