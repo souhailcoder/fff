@@ -10,9 +10,9 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="1487909532287548425" )
    if($("#blogID").attr("blogID")!="6393174373032363752" )
    if($("#blogID").attr("blogID")!="8909874192993789112" )
-
+   if($("#blogID").attr("blogID")!="2063904318100281810" )
  {
-   window.location.href="https://www.almusamm.com/";
+   window.location.href="https://www.facebook.com/Taaalam/";
  }
     });
     
